@@ -24,7 +24,7 @@ db = redis.Redis(os.environ["REDIS_HOST"], decode_responses=True)
 
 @application.route('/')
 def main():
-    return "핵심 쏙쏙 AWS"
+    return "핵심 쏙쏙쏙 AWS"
 
 @application.route('/fileupload', methods=['POST'])
 def file_upload():
