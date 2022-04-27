@@ -23,7 +23,7 @@ mysql.init_app(application)
 # redis
 db = redis.Redis(os.environ["REDIS_HOST"], decode_responses=True)
 
-#logstash
+# logstash
 python_logger = logging.getLogger('python-logstash-logger')
 python_logger.setLevel(logging.INFO)
 python_logger.addHandler(AsynchronousLogstashHandler(os.environ["LOGSTASH_HOST"], 5044, database_path=''))
