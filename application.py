@@ -31,7 +31,7 @@ python_logger.addHandler(AsynchronousLogstashHandler(os.environ["LOGSTASH_HOST"]
 @application.route('/')
 def main():
     python_logger.info('main')
-    return "핵심 쏙쏙 AWS"
+    return "핵심 쏙쏙쏙 AWS"
 
 @application.route('/fileupload', methods=['POST'])
 def file_upload():
